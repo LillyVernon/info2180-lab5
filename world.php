@@ -15,14 +15,31 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 /* $country=$_GET;
 echo $_REQUEST['country']. "\n";
 print_r ($_GET['country'] . "\n");
+*/
 
 
 
 
-
-?>
-<ul>
+ ?>
+<!-- <ul>
 <?php foreach ($results as $row): ?>
-  <li><?= $row['name'] . ' is ruled by ' . $row['head_of_state']; ?></li>
+<li><?= $row['name'] . ' is ruled by ' . $row['head_of_state']; ?></li>
 <?php endforeach; ?>
-</ul>
+</ul>  -->
+
+<table style="border-collapse: collapse; width: 100%; border: 1px solid black;">
+<tr >
+    <th style="border: 1px solid black;">Name</th>
+    <th style="border: 1px solid black;">Continent</th>
+    <th style="border: 1px solid black;">Independence</th>
+    <th style="border: 1px solid black;">Head of State</th>
+  </tr>
+  <?php foreach ($results as $row): ?>
+    <tr:nth-child(even) style="background-color: #f2f2f2" >
+      <td style="border: 1px solid black;"><?= $row['name']; ?></td>
+      <td style="border: 1px solid black;"><?= $row['continent']; ?></td>
+      <td style="border: 1px solid black;"><?= $row['independence_year']; ?></td>
+      <td style="border: 1px solid black;"><?= $row['head_of_state']; ?></td>
+      </tr>
+  <?php endforeach; ?>
+</table>
