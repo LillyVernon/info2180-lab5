@@ -1,1 +1,48 @@
-/* Add your own styles */
+ /* Add your own styles */
+ 
+ header {
+     background-color: teal;
+     padding: 30px;
+     text-align: center;
+ }
+ 
+ main {
+     padding-top: 10px;
+ }
+ 
+ #cities {
+     background-color: lightblue;
+ }
+ 
+ #lookup {
+     background-color: lightseagreen;
+ }
+ 
+ #country {
+     width: 90%;
+ }
+ 
+ button {
+     border-radius: 5px;
+     width: 150px;
+     text-align: center;
+     height: 30px;
+ }
+ 
+ #controls {
+     text-align: center;
+     line-height: 250%;
+     margin: 5px auto;
+     width: 60%;
+     padding: 10px;
+ }
+ 
+ input {
+     line-height: 10px;
+     padding-bottom: 10px;
+     border-radius: 7px;
+ }
+ 
+ body {
+     background-color: #e0e0e0;
+ }
